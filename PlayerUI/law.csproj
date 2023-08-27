@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B265B459-B4B6-44BC-BDB1-B401C58DC48F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlayerUI</RootNamespace>
+    <AssemblyName>PlayerUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="casesearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="casesearch.Designer.cs">
+      <DependentUpon>casesearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CASETPYE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CASETPYE.Designer.cs">
+      <DependentUpon>CASETPYE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="case_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="case_details.Designer.cs">
+      <DependentUpon>case_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CITYDETLS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CITYDETLS.Designer.cs">
+      <DependentUpon>CITYDETLS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbaccess.cs" />
+    <Compile Include="court_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="court_details.Designer.cs">
+      <DependentUpon>court_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORGOTPASS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORGOTPASS.Designer.cs">
+      <DependentUpon>FORGOTPASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="court_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="court_search.designer.cs">
+      <DependentUpon>court_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="law_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="law_search.Designer.cs">
+      <DependentUpon>law_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lawyer_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lawyer_details.Designer.cs">
+      <DependentUpon>lawyer_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyer_qualification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyer_qualification.Designer.cs">
+      <DependentUpon>Lawyer_qualification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lawyer_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lawyer_search.Designer.cs">
+      <DependentUpon>lawyer_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="typesoflaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="typesoflaw.Designer.cs">
+      <DependentUpon>typesoflaw.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="casesearch.resx">
+      <DependentUpon>casesearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CASETPYE.resx">
+      <DependentUpon>CASETPYE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="case_details.resx">
+      <DependentUpon>case_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CITYDETLS.resx">
+      <DependentUpon>CITYDETLS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="court_details.resx">
+      <DependentUpon>court_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORGOTPASS.resx">
+      <DependentUpon>FORGOTPASS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="court_search.resx">
+      <DependentUpon>court_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="law_search.resx">
+      <DependentUpon>law_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lawyer_details.resx">
+      <DependentUpon>lawyer_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyer_qualification.resx">
+      <DependentUpon>Lawyer_qualification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lawyer_search.resx">
+      <DependentUpon>lawyer_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="typesoflaw.resx">
+      <DependentUpon>typesoflaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="law_db.ldf">
+      <DependentUpon>law_db.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="law_db.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
