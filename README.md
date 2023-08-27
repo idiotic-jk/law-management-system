@@ -1,4 +1,7 @@
 # Modern-Media-Player-UI-C-Sharp
-<img src="https://i1.wp.com/rjcodeadvance.com/wp-content/uploads/2019/09/portada-MODERN-UI-SLIDING-MENU-WINDOWS-FORM.png?w=1921&ssl=1">
-<h1>tutorial C#</h1>
-https://www.youtube.com/watch?v=3ni0V-l3Auw
+![Screenshot 2023-08-27 193709](https://github.com/idiotic-jk/law-management-system/assets/120502125/308dc95b-a2da-41c9-b364-e155b38be9bf)
+![Screenshot 2023-08-27 193745](https://github.com/idiotic-jk/law-management-system/assets/120502125/2f5f724c-5b13-4d88-94c2-951de8281617)
+![Screenshot 2023-08-27 193808](https://github.com/idiotic-jk/law-management-system/assets/120502125/2be45e0f-9f2d-4fe4-a4cc-2eb2f27610df)
+![Screenshot 2023-08-27 193826](https://github.com/idiotic-jk/law-management-system/assets/120502125/887f9487-8843-47ef-aac4-40ba8ff1d034)
+
+
